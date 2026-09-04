@@ -1,5 +1,5 @@
 <h1>
-  ALTERION
+  <img src="assets/alterion-title-heavy.svg" width="180" alt="ALTERION">
   <img align="right" src="assets/developer-signature-baseline.svg" width="125" alt="Developer:Renzihao">
 </h1>
 
