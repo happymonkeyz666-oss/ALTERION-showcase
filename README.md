@@ -143,37 +143,7 @@
 
 三层，各自解决不同的问题：
 
-```mermaid
-%%{init: {"flowchart": {"curve": "linear"}}}%%
-graph TB
-    subgraph Web["Web 前端 :5173"]
-        A[任务管理 / 产品库 / 帧编辑 / 换景预设 / 换语种工作台]
-    end
-
-    subgraph API["API 服务 :8787"]
-        B[镜头切分] --> C[关键帧抽取]
-        C --> D[gpt-image 换图<br/>换品 · 换人 · 换景]
-        D --> E[Seedance 2.5 视频生成]
-        E --> G[成本核算 / 用量台账 / 提交对账]
-        L[换语种：即梦 · VOD 声影智译] --> S[画面字幕：检测 → 翻译 → 擦除 → 重烧]
-    end
-
-    subgraph Agent[" "]
-        direction TB
-        H[本地素材与工作区]
-        T["Local&nbsp;Agent&nbsp;:43127&nbsp;·&nbsp;每台机器"]:::agentLabel
-        H --> I[Topaz GPU 画质增强]
-        H --> J[剪映草稿 / 比例转换 / 成片封装]
-        T ~~~ I
-        T ~~~ J
-    end
-
-    classDef agentLabel fill:transparent,stroke:transparent,color:#24292f,font-weight:bold,font-size:12px
-
-    A --> B
-    A --> L
-    G --> H
-```
+<p align="center"><img src="assets/architecture.svg" width="960" alt="ALTERION 系统架构"></p>
 
 **为什么要有 Local Agent** —— 画质增强要吃满本地 GPU（实测 82% 占用、3.3 GB 显存），放在服务端就变成所有人排队。做成每台机器一个常驻服务后，重活在谁的机器上发起就在谁的机器上跑，服务端只管调度。
 
