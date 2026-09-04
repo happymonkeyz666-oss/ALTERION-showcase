@@ -144,6 +144,7 @@
 三层，各自解决不同的问题：
 
 ```mermaid
+%%{init: {"flowchart": {"curve": "linear"}}}%%
 graph TB
     subgraph Web["Web 前端 :5173"]
         A[任务管理 / 产品库 / 帧编辑 / 换景预设 / 换语种工作台]
