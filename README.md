@@ -1,7 +1,6 @@
-<h1>
-  <img src="assets/alterion-title-heavy-wide.svg" width="200" alt="ALTERION">
-  <img align="right" src="assets/developer-signature-baseline.svg" width="125" alt="Developer:Renzihao">
-</h1>
+<p>
+  <img src="assets/alterion-header-bottom-aligned.svg" alt="ALTERION — Developer:Renzihao">
+</p>
 
 **视频模板自动替换 · 一条母片，换鞋、换人、换场地、换语种。**
 

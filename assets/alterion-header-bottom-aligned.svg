@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="64" viewBox="0 0 1000 64" role="img" aria-labelledby="title description">
+  <title id="title">ALTERION</title>
+  <desc id="description">Developer:Renzihao</desc>
+  <text x="0" y="55" fill="#05070a" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="800" letter-spacing="0.2">ALTERION</text>
+  <text x="998" y="55" text-anchor="end" fill="#57606a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="12" font-weight="400">Developer:Renzihao</text>
+  <line x1="0" y1="63" x2="1000" y2="63" stroke="#d0d7de" stroke-width="1"/>
+</svg>
