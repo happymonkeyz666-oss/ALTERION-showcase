@@ -1,4 +1,4 @@
-# ALTERION
+# ALTERION <sub>Developer:Renzihao</sub>
 
 **视频模板自动替换 · 一条母片，换鞋、换人、换场地、换语种。**
 
