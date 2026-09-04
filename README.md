@@ -1,4 +1,7 @@
-# ALTERION <sub>Developer:Renzihao</sub>
+<h1>
+  ALTERION
+  <img align="right" src="assets/developer-signature.svg" width="125" alt="Developer:Renzihao">
+</h1>
 
 **视频模板自动替换 · 一条母片，换鞋、换人、换场地、换语种。**
 
