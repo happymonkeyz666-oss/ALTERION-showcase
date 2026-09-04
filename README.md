@@ -167,7 +167,7 @@ graph TB
         T ~~~ J
     end
 
-    classDef agentLabel fill:transparent,stroke:transparent,color:#24292f,font-weight:bold
+    classDef agentLabel fill:transparent,stroke:transparent,color:#24292f,font-weight:bold,font-size:12px
 
     A --> B
     A --> L
