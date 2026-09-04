@@ -158,20 +158,20 @@ graph TB
     end
 
     subgraph Agent[" "]
-        direction LR
+        direction TB
         H[本地素材与工作区]
+        T["Local&nbsp;Agent&nbsp;:43127&nbsp;·&nbsp;每台机器"]:::agentLabel
         H --> I[Topaz GPU 画质增强]
         H --> J[剪映草稿 / 比例转换 / 成片封装]
-        T["Local Agent :43127 · 每台机器"]:::agentLabel
-        I ~~~ T
-        J ~~~ T
+        T ~~~ I
+        T ~~~ J
     end
 
     classDef agentLabel fill:transparent,stroke:transparent,color:#24292f,font-weight:bold
 
     A --> B
     A --> L
-    G --> Agent
+    G --> H
 ```
 
 **为什么要有 Local Agent** —— 画质增强要吃满本地 GPU（实测 82% 占用、3.3 GB 显存），放在服务端就变成所有人排队。做成每台机器一个常驻服务后，重活在谁的机器上发起就在谁的机器上跑，服务端只管调度。
