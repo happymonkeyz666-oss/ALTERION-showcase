@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1050" role="img" aria-labelledby="title desc">
+  <title id="title">ALTERION system architecture</title>
+  <desc id="desc">Web frontend, API service, and per-machine Local Agent. Local media branches in parallel to Topaz enhancement and packaging tools.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#30363d"/>
+    </marker>
+    <style>
+      .group { fill:#fffde7; stroke:#c8bd57; stroke-width:1.5; }
+      .node { fill:#f2efff; stroke:#a992ff; stroke-width:1.5; }
+      .edge { fill:none; stroke:#30363d; stroke-width:2; marker-end:url(#arrow); }
+      .label { fill:#1f2328; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif; font-size:18px; text-anchor:middle; dominant-baseline:middle; }
+      .group-label { fill:#1f2328; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif; font-size:16px; font-weight:600; }
+    </style>
+  </defs>
+
+  <rect class="group" x="230" y="20" width="640" height="150" rx="2"/>
+  <text class="group-label" x="850" y="48" text-anchor="end">Web 前端 :5173</text>
+  <rect class="node" x="330" y="70" width="440" height="70"/>
+  <text class="label" x="550" y="96">
+    <tspan x="550" dy="0">任务管理 / 产品库 / 帧编辑</tspan>
+    <tspan x="550" dy="26">换景预设 / 换语种工作台</tspan>
+  </text>
+
+  <rect class="group" x="140" y="210" width="820" height="530" rx="2"/>
+  <text class="group-label" x="940" y="240" text-anchor="end">API 服务 :8787</text>
+
+  <rect class="node" x="220" y="270" width="230" height="60"/>
+  <text class="label" x="335" y="300">镜头切分</text>
+
+  <rect class="node" x="220" y="370" width="230" height="60"/>
+  <text class="label" x="335" y="400">关键帧抽取</text>
+
+  <rect class="node" x="200" y="470" width="270" height="75"/>
+  <text class="label" x="335" y="496">
+    <tspan x="335" dy="0">gpt-image 换图</tspan>
+    <tspan x="335" dy="26">换品 · 换人 · 换景</tspan>
+  </text>
+
+  <rect class="node" x="220" y="585" width="230" height="60"/>
+  <text class="label" x="335" y="615">Seedance 2.5 视频生成</text>
+
+  <rect class="node" x="200" y="675" width="270" height="60"/>
+  <text class="label" x="335" y="705">成本核算 / 用量台账 / 提交对账</text>
+
+  <rect class="node" x="620" y="270" width="270" height="75"/>
+  <text class="label" x="755" y="296">
+    <tspan x="755" dy="0">换语种：即梦 · VOD</tspan>
+    <tspan x="755" dy="26">声影智译</tspan>
+  </text>
+
+  <rect class="node" x="610" y="400" width="290" height="90"/>
+  <text class="label" x="755" y="425">
+    <tspan x="755" dy="0">画面字幕：检测 → 翻译</tspan>
+    <tspan x="755" dy="26">擦除 → 重烧</tspan>
+  </text>
+
+  <path class="edge" d="M550 140 V250 H335 V270"/>
+  <path class="edge" d="M550 250 H755 V270"/>
+  <path class="edge" d="M335 330 V370"/>
+  <path class="edge" d="M335 430 V470"/>
+  <path class="edge" d="M335 545 V585"/>
+  <path class="edge" d="M335 645 V675"/>
+  <path class="edge" d="M755 345 V400"/>
+
+  <rect class="group" x="60" y="790" width="980" height="235" rx="2"/>
+  <text class="group-label" x="1010" y="820" text-anchor="end">Local Agent :43127 · 每台机器</text>
+
+  <rect class="node" x="205" y="830" width="260" height="60"/>
+  <text class="label" x="335" y="860">本地素材与工作区</text>
+
+  <rect class="node" x="205" y="940" width="260" height="60"/>
+  <text class="label" x="335" y="970">Topaz GPU 画质增强</text>
+
+  <rect class="node" x="585" y="940" width="340" height="60"/>
+  <text class="label" x="755" y="958">
+    <tspan x="755" dy="0">剪映草稿 / 比例转换 / 成片</tspan>
+    <tspan x="755" dy="25">封装</tspan>
+  </text>
+
+  <path class="edge" d="M335 735 V830"/>
+  <path class="edge" d="M335 890 V940"/>
+  <path class="edge" d="M335 915 H755 V940"/>
+</svg>
