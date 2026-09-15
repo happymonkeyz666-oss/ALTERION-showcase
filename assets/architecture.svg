@@ -18,8 +18,8 @@
   <text class="group-label" x="850" y="48" text-anchor="end">Web 前端 :5173</text>
   <rect class="node" x="330" y="70" width="440" height="70"/>
   <text class="label" x="550" y="96">
-    <tspan x="550" dy="0">任务管理 / 产品库 / 帧编辑</tspan>
-    <tspan x="550" dy="26">换景预设 / 换语种工作台</tspan>
+    <tspan x="550" dy="0">产品库 / 视频替换 / 创意雷达</tspan>
+    <tspan x="550" dy="26">一键创意 / 视频反推 / 换语种</tspan>
   </text>
 
   <rect class="group" x="140" y="210" width="820" height="530" rx="2"/>
@@ -33,7 +33,7 @@
 
   <rect class="node" x="200" y="470" width="270" height="75"/>
   <text class="label" x="335" y="496">
-    <tspan x="335" dy="0">gpt-image 换图</tspan>
+    <tspan x="335" dy="0">GPT Image 2.5 换图</tspan>
     <tspan x="335" dy="26">换品 · 换人 · 换景</tspan>
   </text>
 
@@ -55,6 +55,10 @@
     <tspan x="755" dy="26">擦除 → 重烧</tspan>
   </text>
 
+  <rect class="node" x="610" y="530" width="290" height="95"/>
+  <text class="label" x="755" y="554"><tspan x="755">创意雷达 / Seed 2.1 Turbo</tspan><tspan x="755" dy="26">视频理解 · 动作拆解</tspan><tspan x="755" dy="26">Prompt 编排 · 产品绑定</tspan></text>
+  <path class="edge" d="M610 605 H530 V615 H450"/>
+  <path class="edge" d="M550 250 H580 V577 H610"/>
   <path class="edge" d="M550 140 V250 H335 V270"/>
   <path class="edge" d="M550 250 H755 V270"/>
   <path class="edge" d="M335 330 V370"/>
